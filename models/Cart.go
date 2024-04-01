@@ -17,3 +17,5 @@ func NewCart(userID uint) *Cart {
 		OrderProducts: []OrderProduct{}, // Inicializar con un slice vacío
 	}
 }
+
+//laskdlaskd
