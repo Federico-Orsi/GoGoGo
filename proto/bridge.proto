@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+option go_package = "./proto";
+
+message Person {
+
+string nombre = 1;
+string apellido = 2;
+}
+
+
+message PersonRequest {
+
+Person person = 1;
+}
+
+message PersonResponse {
+
+string hi = 1;
+}
+
+
+service BridgeService{
+
+    rpc CallPerson(PersonRequest) returns (PersonResponse){};
+};
